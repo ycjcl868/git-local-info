@@ -1,0 +1,60 @@
+{
+  "name": "git-local-info",
+  "version": "1.0.0",
+  "description": "Retrieve current sha, branch name, repository from a git repo.",
+  "main": "index.js",
+  "module": "./lib",
+  "files": [
+    "lib/**/*.{js,d.ts}",
+    "index.js"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "precommit": "npm run lint-staged",
+    "lint-staged": "lint-staged",
+    "clean": "rimraf ./lib",
+    "build": "tsc",
+    "ci": "npm run lint && npm run test",
+    "test": "TEST=1 mocha -r ts-node/register test/*.test.ts test/**/*.test.ts",
+    "lint": "tslint --project ./tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ycjcl868/git-local-info.git"
+  },
+  "keywords": [
+    "git",
+    "gitinfo"
+  ],
+  "author": "ycjcl868",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ycjcl868/git-local-info/issues"
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.ts": "npm run lint"
+    },
+    "ignore": [
+      "src/typings/**.ts"
+    ]
+  },
+  "homepage": "https://github.com/ycjcl868/git-local-info",
+  "devDependencies": {
+    "lint-staged": "^8.0.4",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "debug": "^4.1.0",
+    "mocha": "^4.1.0",
+    "rimraf": "^2.6.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.2"
+  },
+  "engines": {
+    "node": ">= 4.0"
+  },
+  "dependencies": {
+    "ini": "^1.3.5"
+  }
+}
