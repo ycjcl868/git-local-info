@@ -56,3 +56,7 @@ new GitInfo(params);
 }
 ```
 
+
+### Screenshot
+
+![image](https://user-images.githubusercontent.com/13595509/51222175-90a44c80-1977-11e9-81f7-e732e86c38de.png)
