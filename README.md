@@ -13,10 +13,8 @@ Retrieves repo information without relying on the `git` command.
 
 ### Usage
 
-```
-// install
-$ npm install git-local-info -S
-```
+[![rc-image](https://nodei.co/npm/rc-image.png)](https://npmjs.org/package/rc-image)
+
 
 ```javascript
 import GitInfo from 'git-local-info';
