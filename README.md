@@ -13,7 +13,7 @@ Retrieves repo information without relying on the `git` command.
 
 ### Usage
 
-[![rc-image](https://nodei.co/npm/rc-image.png)](https://npmjs.org/package/rc-image)
+[![git-local-info](https://nodei.co/npm/git-local-info.png)](https://npmjs.org/package/git-local-info)
 
 
 ```javascript
